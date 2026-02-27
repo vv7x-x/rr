@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-midnight: #0a0b1e;
+  --color-space-purple: #1e0b36;
+  --color-stardust: #e2e8f0;
+  --color-lunar: #94a3b8;
+}
+
+:root {
+  --foreground-rgb: 226, 232, 240;
+  --background-start-rgb: 10, 11, 30;
+  --background-end-rgb: 30, 11, 54;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb))
+    ) fixed;
+  min-height: 100vh;
+  direction: rtl;
+  font-family: 'Cairo', sans-serif;
+}
+
+.luxury-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+}
+
+.luxury-card:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(100, 50, 200, 0.4);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(100, 50, 255, 0.3);
+}
+
+.space-button {
+  background: linear-gradient(45deg, #4f46e5, #7c3aed);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.space-button:hover {
+  filter: brightness(1.2);
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.6);
+}
