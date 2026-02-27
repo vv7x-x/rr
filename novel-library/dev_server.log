@@ -1,0 +1,16 @@
+
+> novel-library@0.1.0 dev
+> next dev
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+- Environments: .env.local, .env
+
+✓ Starting...
+✓ Ready in 1236ms
+○ Compiling / ...
+ GET / 200 in 6.9s (compile: 6.3s, render: 590ms)
+ GET / 200 in 98ms (compile: 13ms, render: 85ms)
+✓ Compiled in 162ms
+ GET / 200 in 303ms (compile: 139ms, render: 164ms)
